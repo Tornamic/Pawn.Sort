@@ -31,9 +31,9 @@ Sort::OddEven(array[], const len = sizeof array)
 ```
 #### Logarithmic Sort Functions
 ```pawn
-Sort::Quick(array[], left, right) https://en.wikipedia.org/wiki/Quicksort
-Sort::Heap(array[], const len = sizeof array) https://en.wikipedia.org/wiki/Heapsort
-Sort::Shell(array[], const len = sizeof array) https://en.wikipedia.org/wiki/Shellsort
+Sort::Quick(array[], left, right) 
+Sort::Heap(array[], const len = sizeof array) 
+Sort::Shell(array[], const len = sizeof array) 
 ```
 #### Misc Functions
 ```pawn
