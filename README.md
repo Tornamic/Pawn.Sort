@@ -5,23 +5,38 @@ Sorting algorithms for Pawn
     Discord: https://pastebin.com/raw/LMBNfFHE
     Github: https://github.com/Tornamic
     pawn.wiki https://pawn.wiki/i.php?/user/54232-tornamic/
-##### Quadratic Sort Functions 
-    Sort::Bubble(array[], const len = sizeof array)
-    Sort::Selection(array[], const len = sizeof array) 
-    Sort::Insertion(array[], const len = sizeof array)
-    Sort::Gnome(array[], const len = sizeof array)
-    Sort::Shaker(array[], len = sizeof array)
-    Sort::OddEven(array[], const len = sizeof array)
-
-##### Logarithmic Sort Functions
-    Sort::Quick(array[], left, right) https://en.wikipedia.org/wiki/Quicksort
-    Sort::Heap(array[], const len = sizeof array) https://en.wikipedia.org/wiki/Heapsort
-    Sort::Shell(array[], const len = sizeof array) https://en.wikipedia.org/wiki/Shellsort
-
-##### Misc Functions
-    Var::Swap(&value1, &value2)
-    Array::Shuffle(array[], const len = sizeof array, randmin = -10000, randmax = 10000)
-    Array::Print(array[], const len = sizeof array)
+### Example
+```pawn
+main()
+{
+    new array[100];
+    Array::Shuffle(array);
+    print("Bubble sort:");
+    Sort::Bubble(array);
+    Array::Print(array);
+}
+```
+#### Quadratic Sort Functions 
+```pawn
+Sort::Bubble(array[], const len = sizeof array)
+Sort::Selection(array[], const len = sizeof array) 
+Sort::Insertion(array[], const len = sizeof array)
+Sort::Gnome(array[], const len = sizeof array)
+Sort::Shaker(array[], len = sizeof array)
+Sort::OddEven(array[], const len = sizeof array)
+```
+#### Logarithmic Sort Functions
+```pawn
+Sort::Quick(array[], left, right) https://en.wikipedia.org/wiki/Quicksort
+Sort::Heap(array[], const len = sizeof array) https://en.wikipedia.org/wiki/Heapsort
+Sort::Shell(array[], const len = sizeof array) https://en.wikipedia.org/wiki/Shellsort
+```
+#### Misc Functions
+```pawn
+Var::Swap(&value1, &value2)
+Array::Shuffle(array[], const len = sizeof array, randmin = -10000, randmax = 10000)
+Array::Print(array[], const len = sizeof array)
+```
 ### Speed (less is better)
 <ul>
  <li>Quick sort: 4</li>
