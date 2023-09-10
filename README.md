@@ -5,6 +5,10 @@ Sorting algorithms for Pawn
     Discord: https://pastebin.com/raw/LMBNfFHE
     Github: https://github.com/Tornamic
     pawn.wiki https://pawn.wiki/i.php?/user/54232-tornamic/
+### Installation
+```pawn
+#include <Pawn.Sort>
+```
 ### Example
 ```pawn
 main()
