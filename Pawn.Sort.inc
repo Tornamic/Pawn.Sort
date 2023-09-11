@@ -21,10 +21,15 @@ Author: Tornamic (Kirill Tymoshchenko)
     Sort::Heap(array[], const len = sizeof array) https://en.wikipedia.org/wiki/Heapsort
     Sort::Shell(array[], const len = sizeof array) https://en.wikipedia.org/wiki/Shellsort
 
+# Weird Sort Functions
+    Sort::Bogo(array[], const len = sizeof array) https://en.wikipedia.org/wiki/Bogosort
+
 # Misc Functions
     Var::Swap(&value1, &value2)
-    Array::Shuffle(array[], const len = sizeof array, randmin = -10000, randmax = 10000)
+    Array::FillRandomValues(array[], const len = sizeof array, randmin = -10000, randmax = 10000)
     Array::Print(array[], const len = sizeof array)
+    Array::Shuffle(array[], const len = sizeof array)
+    Array::IsSorted(const array[], const len = sizeof array)
 */
 
 #if defined TORT_PAWN_SORT
@@ -32,7 +37,7 @@ Author: Tornamic (Kirill Tymoshchenko)
 #endif
 #define TORT_PAWN_SORT
 
-#define _PAWN_SORT_VERSION                            (1)
+#define _PAWN_SORT_VERSION                            (2)
 
 #define Sort::                                        PSS_T_ 
 #define Var::                                         PSV_T_ 
@@ -46,11 +51,19 @@ stock Var::Swap(&value1, &value2)
 	#emit sref.s.alt value1
 }
 
-stock Array::Shuffle(array[], const len = sizeof array, randmin = -10000, randmax = 10000)
+stock Array::FillRandomValues(array[], const len = sizeof array, randmin = -10000, randmax = 10000)
 {
     for(new i = 0; i < len; i++)
     {
         array[i] = random(randmax - randmin) + randmin;
+    }
+}
+
+stock Array::Shuffle(array[], const len = sizeof array)
+{
+    for(new i = len - 1; i >= 1; i--)
+    {
+        Var::Swap(array[i], array[random(i + 1)]);
     }
 }
 
@@ -61,6 +74,17 @@ stock Array::Print(array[], const len = sizeof array)
         printf("%i", array[i]);
     }
 }
+
+stock Array::IsSorted(const array[], const len = sizeof array)
+{
+    for (new i = 0; i < len - 1; i++)
+    {
+        if (array[i] > array[i + 1])
+            return 0;
+    }
+    return 1;
+}
+
 
 ///////////////////////////////////
 //           Quadratic           //
@@ -242,4 +266,14 @@ stock PS_H_Heapify(array[], n, i)
         Var::Swap(array[largest], array[i]);
         PS_H_Heapify(array, n, largest);
     }
+}
+
+///////////////////////////////////
+//             Weird             //
+///////////////////////////////////
+
+stock Sort::Bogo(array[], const len = sizeof array)
+{
+    while(!Array::IsSorted(array, len))
+        Array::Shuffle(array, len);
 }
