@@ -14,7 +14,7 @@ Sorting algorithms for Pawn
 main()
 {
     new array[100];
-    Array::Shuffle(array);
+    Array::FillRandomValues(array);
     print("Bubble sort:");
     Sort::Bubble(array);
     Array::Print(array);
@@ -38,8 +38,10 @@ Sort::Shell(array[], const len = sizeof array)
 #### Misc Functions
 ```pawn
 Var::Swap(&value1, &value2)
-Array::Shuffle(array[], const len = sizeof array, randmin = -10000, randmax = 10000)
+Array::FillRandomValues(array[], const len = sizeof array, randmin = -10000, randmax = 10000)
 Array::Print(array[], const len = sizeof array)
+Array::Shuffle(array[], const len = sizeof array)
+Array::IsSorted(const array[], const len = sizeof array)
 ```
 ### Speed (less is better)
 <ul>
@@ -52,4 +54,5 @@ Array::Print(array[], const len = sizeof array)
  <li>Gnome sort: 27 </li>
  <li>OddEven sort: 28</li>
  <li>Bubble sort: 44</li>
+ <li>Bogo sort: Infinity</li>
 </ul>
