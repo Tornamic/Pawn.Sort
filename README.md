@@ -35,6 +35,10 @@ Sort::Quick(array[], left, right)
 Sort::Heap(array[], const len = sizeof array) 
 Sort::Shell(array[], const len = sizeof array) 
 ```
+#### Weird Sort Functions
+```pawn
+Sort::Bogo(array[], const len = sizeof array)
+```
 #### Misc Functions
 ```pawn
 Var::Swap(&value1, &value2)
