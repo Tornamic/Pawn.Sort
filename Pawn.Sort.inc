@@ -9,27 +9,27 @@ Author: Tornamic (Kirill Tymoshchenko)
 
 
 # Quadratic Sort Functions 
-    Sort::Bubble(array[], const len = sizeof array) https://en.wikipedia.org/wiki/Bubble_sort
-    Sort::Selection(array[], const len = sizeof array) https://en.wikipedia.org/wiki/Selection_sort
-    Sort::Insertion(array[], const len = sizeof array) https://en.wikipedia.org/wiki/Insertion_sort
-    Sort::Gnome(array[], const len = sizeof array) https://en.wikipedia.org/wiki/Gnome_sort
-    Sort::Shaker(array[], len = sizeof array) https://en.wikipedia.org/wiki/Cocktail_shaker_sort
-    Sort::OddEven(array[], const len = sizeof array) https://en.wikipedia.org/wiki/Odd%E2%80%93even_sort
+native Sort::Bubble(array[], const len = sizeof array) https://en.wikipedia.org/wiki/Bubble_sort
+native Sort::Selection(array[], const len = sizeof array) https://en.wikipedia.org/wiki/Selection_sort
+native Sort::Insertion(array[], const len = sizeof array) https://en.wikipedia.org/wiki/Insertion_sort
+native Sort::Gnome(array[], const len = sizeof array) https://en.wikipedia.org/wiki/Gnome_sort
+native Sort::Shaker(array[], len = sizeof array) https://en.wikipedia.org/wiki/Cocktail_shaker_sort
+native Sort::OddEven(array[], const len = sizeof array) https://en.wikipedia.org/wiki/Odd%E2%80%93even_sort
 
 # Logarithmic Sort Functions
-    Sort::Quick(array[], left, right) https://en.wikipedia.org/wiki/Quicksort
-    Sort::Heap(array[], const len = sizeof array) https://en.wikipedia.org/wiki/Heapsort
-    Sort::Shell(array[], const len = sizeof array) https://en.wikipedia.org/wiki/Shellsort
+native Sort::Quick(array[], left, right) https://en.wikipedia.org/wiki/Quicksort
+native Sort::Heap(array[], const len = sizeof array) https://en.wikipedia.org/wiki/Heapsort
+native Sort::Shell(array[], const len = sizeof array) https://en.wikipedia.org/wiki/Shellsort
 
 # Weird Sort Functions
-    Sort::Bogo(array[], const len = sizeof array) https://en.wikipedia.org/wiki/Bogosort
+native Sort::Bogo(array[], const len = sizeof array) https://en.wikipedia.org/wiki/Bogosort
 
 # Misc Functions
-    Var::Swap(&value1, &value2)
-    Array::FillRandomValues(array[], const len = sizeof array, randmin = -10000, randmax = 10000)
-    Array::Print(array[], const len = sizeof array)
-    Array::Shuffle(array[], const len = sizeof array)
-    Array::IsSorted(const array[], const len = sizeof array)
+native Var::Swap(&value1, &value2)
+native Array::FillRandomValues(array[], const len = sizeof array, randmin = -10000, randmax = 10000)
+native Array::Print(array[], const len = sizeof array)
+native Array::Shuffle(array[], const len = sizeof array)
+native Array::IsSorted(const array[], const len = sizeof array)
 */
 
 #if defined TORT_PAWN_SORT
