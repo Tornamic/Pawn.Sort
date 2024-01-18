@@ -37,7 +37,7 @@ native Array::IsSorted(const array[], const len = sizeof array)
 #endif
 #define TORT_PAWN_SORT
 
-#define _PAWN_SORT_VERSION                            (2)
+#define _PAWN_SORT_VERSION                            (2.1)
 
 #define Sort::                                        PSS_T_ 
 #define Var::                                         PSV_T_ 
