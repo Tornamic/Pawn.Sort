@@ -22,30 +22,30 @@ main()
 ```
 #### Quadratic Sort Functions 
 ```pawn
-Sort::Bubble(array[], const len = sizeof array)
-Sort::Selection(array[], const len = sizeof array) 
-Sort::Insertion(array[], const len = sizeof array)
-Sort::Gnome(array[], const len = sizeof array)
-Sort::Shaker(array[], len = sizeof array)
-Sort::OddEven(array[], const len = sizeof array)
+native Sort::Bubble(array[], const len = sizeof array);
+native Sort::Selection(array[], const len = sizeof array);
+native Sort::Insertion(array[], const len = sizeof array);
+native Sort::Gnome(array[], const len = sizeof array);
+native Sort::Shaker(array[], len = sizeof array);
+native Sort::OddEven(array[], const len = sizeof array);
 ```
 #### Logarithmic Sort Functions
 ```pawn
-Sort::Quick(array[], left, right) 
-Sort::Heap(array[], const len = sizeof array) 
-Sort::Shell(array[], const len = sizeof array) 
+native Sort::Quick(array[], left, right);
+native Sort::Heap(array[], const len = sizeof array); 
+native Sort::Shell(array[], const len = sizeof array); 
 ```
 #### Weird Sort Functions
 ```pawn
-Sort::Bogo(array[], const len = sizeof array)
+native Sort::Bogo(array[], const len = sizeof array);
 ```
 #### Misc Functions
 ```pawn
-Var::Swap(&value1, &value2)
-Array::FillRandomValues(array[], const len = sizeof array, randmin = -10000, randmax = 10000)
-Array::Print(array[], const len = sizeof array)
-Array::Shuffle(array[], const len = sizeof array)
-Array::IsSorted(const array[], const len = sizeof array)
+native Var::Swap(&value1, &value2);
+native Array::FillRandomValues(array[], const len = sizeof array, randmin = -10000, randmax = 10000);
+native Array::Print(array[], const len = sizeof array);
+native Array::Shuffle(array[], const len = sizeof array);
+native Array::IsSorted(const array[], const len = sizeof array);
 ```
 ### Speed (less is better)
 <ul>
