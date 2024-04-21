@@ -47,16 +47,16 @@ native Array::Print(array[], const len = sizeof array);
 native Array::Shuffle(array[], const len = sizeof array);
 native Array::IsSorted(const array[], const len = sizeof array);
 ```
-### Speed (less is better)
-<ul>
- <li>Quick sort: 4</li>
- <li>Shell sort: 5</li>
- <li>Heap sort: 9</li>
- <li>Insertion sort: 12</li>
- <li>Selection sort: 14</li>
- <li>Shaker sort: 25</li>
- <li>Gnome sort: 27 </li>
- <li>OddEven sort: 28</li>
- <li>Bubble sort: 44</li>
- <li>Bogo sort: Infinity</li>
-</ul>
+### Tests (less is better)
+```pawn
+Quick Sort: 0.057900ms
+Shell Sort: 0.098600ms
+Heap Sort: 0.145300ms
+Insertion Sort: 0.212200ms
+Selection Sort: 0.273199ms
+Shaker Sort: 0.442599ms
+Gnome Sort: 0.470999ms
+OddEven Sort: 0.514299ms
+Bubble Sort: 0.783600ms
+Bogo Sort: Infinity
+```
