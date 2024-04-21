@@ -48,7 +48,7 @@ native Array::Shuffle(array[], const len = sizeof array);
 native Array::IsSorted(const array[], const len = sizeof array);
 ```
 ### Tests (less is better)
-```pawn
+```
 Quick Sort: 0.057900ms
 Shell Sort: 0.098600ms
 Heap Sort: 0.145300ms
