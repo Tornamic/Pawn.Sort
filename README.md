@@ -47,7 +47,7 @@ native Array::Print(array[], const len = sizeof array);
 native Array::Shuffle(array[], const len = sizeof array);
 native Array::IsSorted(const array[], const len = sizeof array);
 ```
-### Tests (less is better)
+### Time to sort an array of 100 cells (less is better)
 ```
 Quick Sort:         0.057900 ms
 Shell Sort:         0.098600 ms
