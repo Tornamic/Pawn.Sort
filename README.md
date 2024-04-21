@@ -49,14 +49,14 @@ native Array::IsSorted(const array[], const len = sizeof array);
 ```
 ### Tests (less is better)
 ```
-Quick Sort: 0.057900ms
-Shell Sort: 0.098600ms
-Heap Sort: 0.145300ms
-Insertion Sort: 0.212200ms
-Selection Sort: 0.273199ms
-Shaker Sort: 0.442599ms
-Gnome Sort: 0.470999ms
-OddEven Sort: 0.514299ms
-Bubble Sort: 0.783600ms
-Bogo Sort: Infinity
+Quick Sort:         0.057900 ms
+Shell Sort:         0.098600 ms
+Heap Sort:          0.145300 ms
+Insertion Sort:     0.212200 ms
+Selection Sort:     0.273199 ms
+Shaker Sort:        0.442599 ms
+Gnome Sort:         0.470999 ms
+OddEven Sort:       0.514299 ms
+Bubble Sort:        0.783600 ms
+Bogo Sort:          Infinity
 ```
