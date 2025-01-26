@@ -1,6 +1,7 @@
 /*
 
-Copyright © 2023 Tornamic. All rights reserved.
+Copyright (C) 2023-2025 Tornamic
+This file is part of a project licensed under GNU LGPL v2.1.
 
 Author: Tornamic (Kirill Tymoshchenko)
     Discord: https://pastebin.com/raw/LMBNfFHE
